@@ -58,8 +58,8 @@ public interface GatewayConfig {
     /**
      * Override the {@code Host}/{@code :authority} header sent upstream. Unset ⇒ the upstream's own
      * {@code host:port} (vertx-http-proxy's default). Needed for upstreams that validate Host — dev
-     * servers reject anything that isn't localhost or allow-listed, which is why qits' daemon proxy
-     * rewrites it to {@code localhost}.
+     * servers reject anything that isn't localhost or allow-listed, which is why qits' service
+     * web-view proxy rewrites it to {@code localhost}.
      */
     Optional<String> authority();
 
